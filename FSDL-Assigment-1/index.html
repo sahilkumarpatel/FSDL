@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Text Formatting Tags</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .note {
+            background-color: #eef6ff;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Text Formatting Tags</h1>
+
+    <h2>Introduction</h2>
+    <p>
+        HTML (HyperText Markup Language) provides several text formatting tags
+        that are used to control the appearance and structure of text on a web page.
+        These tags help developers highlight important content, improve readability,
+        and enhance user experience. Text formatting tags define how text should be
+        displayed, such as bold, italic, underlined, highlighted, or styled in
+        different semantic ways.
+    </p>
+
+    <p>
+        Text formatting in HTML plays an important role in web design as it helps
+        convey meaning, emphasize key points, and structure content logically.
+        Some tags focus on visual appearance, while others focus on semantic meaning,
+        which is useful for accessibility and search engine optimization (SEO).
+    </p>
+
+    <h2>List of HTML Text Formatting Tags</h2>
+
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example Output</th>
+        </tr>
+
+        <tr>
+            <td>&lt;b&gt;</td>
+            <td>Bold</td>
+            <td>Makes text bold without adding importance.</td>
+            <td><b>Bold Text</b></td>
+        </tr>
+
+        <tr>
+            <td>&lt;strong&gt;</td>
+            <td>Strong</td>
+            <td>Indicates strong importance (semantic).</td>
+            <td><strong>Strong Text</strong></td>
+        </tr>
+
+        <tr>
+            <td>&lt;i&gt;</td>
+            <td>Italic</td>
+            <td>Makes text italic without emphasis.</td>
+            <td><i>Italic Text</i></td>
+        </tr>
+
+        <tr>
+            <td>&lt;em&gt;</td>
+            <td>Emphasis</td>
+            <td>Emphasizes text semantically.</td>
+            <td><em>Emphasized Text</em></td>
+        </tr>
+
+        <tr>
+            <td>&lt;u&gt;</td>
+            <td>Underline</td>
+            <td>Underlines the text.</td>
+            <td><u>Underlined Text</u></td>
+        </tr>
+
+        <tr>
+            <td>&lt;mark&gt;</td>
+            <td>Mark</td>
+            <td>Highlights text.</td>
+            <td><mark>Marked Text</mark></td>
+        </tr>
+
+        <tr>
+            <td>&lt;small&gt;</td>
+            <td>Small</td>
+            <td>Displays smaller-sized text.</td>
+            <td><small>Small Text</small></td>
+        </tr>
+
+        <tr>
+            <td>&lt;del&gt;</td>
+            <td>Deleted</td>
+            <td>Shows deleted text with a strike-through.</td>
+            <td><del>Deleted Text</del></td>
+        </tr>
+
+        <tr>
+            <td>&lt;ins&gt;</td>
+            <td>Inserted</td>
+            <td>Shows inserted text with underline.</td>
+            <td><ins>Inserted Text</ins></td>
+        </tr>
+
+        <tr>
+            <td>&lt;sub&gt;</td>
+            <td>Subscript</td>
+            <td>Displays subscript text.</td>
+            <td>H<sub>2</sub>O</td>
+        </tr>
+
+        <tr>
+            <td>&lt;sup&gt;</td>
+            <td>Superscript</td>
+            <td>Displays superscript text.</td>
+            <td>x<sup>2</sup></td>
+        </tr>
+
+        <tr>
+            <td>&lt;code&gt;</td>
+            <td>Code</td>
+            <td>Displays programming code.</td>
+            <td><code>printf("Hello");</code></td>
+        </tr>
+
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Preformatted</td>
+            <td>Preserves spaces and line breaks.</td>
+            <td>
+                <pre>
+Line 1
+Line 2
+                </pre>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;blockquote&gt;</td>
+            <td>Block Quote</td>
+            <td>Displays long quotations.</td>
+            <td>
+                <blockquote>
+                    Knowledge is power.
+                </blockquote>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;q&gt;</td>
+            <td>Quote</td>
+            <td>Displays short inline quotations.</td>
+            <td><q>HTML is easy</q></td>
+        </tr>
+    </table>
+
+    <div class="note">
+        <h2>Additional Notes</h2>
+        <p>
+            ✔ Semantic tags like <strong>&lt;strong&gt;</strong> and <strong>&lt;em&gt;</strong>
+            are preferred over purely visual tags because they improve accessibility.
+        </p>
+        <p>
+            ✔ Formatting tags should be used carefully to maintain clean and readable
+            web content.
+        </p>
+        <p>
+            ✔ CSS is recommended for advanced styling, while HTML formatting tags
+            are mainly used for basic text emphasis.
+        </p>
+    </div>
+
+</body>
+</html>
