@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birgunj Fashion | Premium Style</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Birgunj Fashion.</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="?category=Men">Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="?category=Women">Women</a></li>
+                    <li class="nav-item"><a class="nav-link" href="?category=Kids">Kids</a></li>
+                    <li class="nav-item"><a class="nav-link" href="?category=Accessories">Accessories</a></li>
+                </ul>
+                <div class="nav-icons d-flex align-items-center">
+                    <ul class="navbar-nav flex-row">
+                        <li class="nav-item me-3">
+                            <button class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item me-3">
+                            <button class="nav-link btn btn-link position-relative" data-bs-toggle="offcanvas"
+                                data-bs-target="#wishlistSidebar">
+                                <i class="fa-regular fa-heart"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                    id="wishlist-count" style="display: none;">0</span>
+                            </button>
+                        </li>
+                        <li class="nav-item me-3">
+                            <button class="nav-link btn btn-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="fa-regular fa-user"></i>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-link position-relative" data-bs-toggle="offcanvas"
+                                data-bs-target="#cartSidebar">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-badge"
+                                    id="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Wishlist Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistSidebar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold">Your Wishlist</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="wishlist-items" class="d-flex flex-column gap-3">
+                <!-- Wishlist Items Will Go Here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <span class="text-uppercase text-danger fw-bold letter-spacing-2 mb-2 d-block">Summer Collection
+                        2026</span>
+                    <h1 class="hero-title">Elevate Your <br>Birgunj Style.</h1>
+                    <p class="hero-subtitle">Discover the new arrivals that are redefining modern fashion. bold prints,
+                        sustainable fabrics, and effortless silhouettes.</p>
+                    <div class="d-flex gap-3">
+                        <a href="?category=Men" class="btn btn-primary-custom">Shop Now</a>
+                        <a href="new-arrivals.html" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold">New
+                            Arrivals</a>
+                    </div>
+                    <div class="mt-5 d-flex gap-5">
+                        <div>
+                            <h4 class="fw-bold mb-0">20k+</h4>
+                            <small class="text-muted">Happy Customers</small>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold mb-0">100%</h4>
+                            <small class="text-muted">Quality Guarantee</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-wrapper text-center">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=1000&auto=format&fit=crop"
+                            alt="Yellow Premium Sneaker" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Band -->
+    <section class="features-band">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-truck-fast feature-icon"></i>
+                        <h4 class="feature-title">Free Shipping</h4>
+                        <p class="text-muted small mb-0">On all orders over Rs 5000</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-rotate-left feature-icon"></i>
+                        <h4 class="feature-title">Easy Returns</h4>
+                        <p class="text-muted small mb-0">30 day money back guarantee</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved feature-icon"></i>
+                        <h4 class="feature-title">Secure Payment</h4>
+                        <p class="text-muted small mb-0">100% secure payment</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-headset feature-icon"></i>
+                        <h4 class="feature-title">24/7 Support</h4>
+                        <p class="text-muted small mb-0">Dedicated support team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="collection" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="d-flex justify-content-center gap-3 mb-5" id="category-filters">
+                <a href="index.html" class="btn btn-dark rounded-pill px-4 active" data-filter="all">All</a>
+                <a href="?category=Men" class="btn btn-outline-dark border-0 rounded-pill px-4"
+                    data-filter="Men">Men</a>
+                <a href="?category=Women" class="btn btn-outline-dark border-0 rounded-pill px-4"
+                    data-filter="Women">Women</a>
+                <a href="?category=Kids" class="btn btn-outline-dark border-0 rounded-pill px-4"
+                    data-filter="Kids">Kids</a>
+                <a href="?category=Accessories" class="btn btn-outline-dark border-0 rounded-pill px-4"
+                    data-filter="Accessories">Accessories</a>
+            </div>
+            <div class="row g-4" id="product-grid">
+                <!-- Products will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center py-5">
+            <h2 class="display-5 fw-bold mb-3 text-white">Join the Family</h2>
+            <p class="mb-4 text-white-50">Subscribe to our newsletter for exclusive offers and updates.</p>
+            <form id="newsletter-form" class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control p-3 rounded-start-pill border-0"
+                            placeholder="Your email address" required>
+                        <button class="btn btn-danger px-4 rounded-end-pill" type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo">Birgunj Fashion.</a>
+                    <p class="text-white-50">Redefining modern fashion in Birgunj with sustainable materials and
+                        timeless design. Join us in our journey since 2026.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Shop</h5>
+                    <a href="?category=Men" class="footer-link">Men</a>
+                    <a href="?category=Women" class="footer-link">Women</a>
+                    <a href="?category=Kids" class="footer-link">Kids</a>
+                    <a href="?category=Accessories" class="footer-link">Accessories</a>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <a href="about.html" class="footer-link">Our Story</a>
+                    <a href="#" class="footer-link">Careers</a>
+                    <a href="#" class="footer-link">Press</a>
+                    <a href="#" class="footer-link">Stores</a>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-4">Contact</h5>
+                    <p class="text-white-50 mb-2"><i class="fa-solid fa-location-dot me-2"></i> Birgunj Main Rd, Nepal
+                    </p>
+                    <p class="text-white-50 mb-2"><i class="fa-solid fa-phone me-2"></i> +977 1234567890</p>
+                    <p class="text-white-50"><i class="fa-solid fa-envelope me-2"></i> hello@birgunjfashion.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Birgunj Fashion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar (Offcanvas) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold">Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="cart-items" class="flex-grow-1">
+                <div class="text-center text-muted mt-5">
+                    <i class="fa-solid fa-basket-shopping fa-3x mb-3 opacity-25"></i>
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            <div class="cart-footer mt-auto pt-4 border-top">
+                <div class="d-flex justify-content-between mb-4">
+                    <span class="fw-bold">Total:</span>
+                    <span class="cart-total" id="cart-total">Rs 0.00</span>
+                </div>
+                <button class="btn btn-dark w-100 py-3 rounded-pill fw-bold" data-bs-toggle="modal"
+                    data-bs-target="#checkoutModal" id="checkout-btn" disabled>Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-body p-4">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-0"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control border-0 fs-5" id="search-input"
+                            placeholder="Search for products...">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg p-3">
+                <div class="modal-header border-0 pb-0">
+                    <h4 class="modal-title fw-bold">Welcome Back</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="******" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-2 rounded-3 fw-bold">Sign In</button>
+                        <p class="text-center mt-3 small text-muted">Don't have an account? <a href="#"
+                                class="text-decoration-none text-dark fw-bold">Register</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold">Secure Checkout</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="checkout-form">
+                        <div class="mb-3">
+                            <label class="form-label small text-muted text-uppercase fw-bold">Contact Info</label>
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small text-muted text-uppercase fw-bold">Shipping Details</label>
+                            <input type="text" class="form-control mb-2" placeholder="Full Name" required>
+                            <input type="text" class="form-control" placeholder="Address" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small text-muted text-uppercase fw-bold">Payment</label>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text"><i class="fa-regular fa-credit-card"></i></span>
+                                <input type="text" class="form-control" placeholder="Card Number" required>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="MM/YY" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="CVC" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-4 p-3 bg-light rounded">
+                            <span class="fw-bold">Total to Pay</span>
+                            <span class="fw-bold text-danger fs-5" id="checkout-total-display">Rs 0.00</span>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 py-3 rounded-pill fw-bold">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="modal fade" id="quickViewModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg overflow-hidden">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="" id="qv-image" class="img-fluid h-100 object-fit-cover" alt="Product"
+                            style="min-height: 400px;">
+                    </div>
+                    <div class="col-md-6 d-flex flex-column p-4">
+                        <button type="button" class="btn-close align-self-end mb-3" data-bs-dismiss="modal"></button>
+                        <span class="text-muted small text-uppercase fw-bold mb-2" id="qv-category">Category</span>
+                        <h3 class="fw-bold mb-3" id="qv-title">Product Title</h3>
+                        <p class="text-muted mb-4">Experience premium quality and style with this exclusive item from
+                            Birgunj Fashion. Crafted for comfort and durability.</p>
+                        <h4 class="text-danger fw-bold mb-4" id="qv-price">Rs 0.00</h4>
+                        <div class="mt-auto">
+                            <button class="btn btn-dark w-100 py-3 rounded-pill fw-bold mb-2" id="qv-add-btn">Add to
+                                Cart</button>
+                            <button class="btn btn-outline-secondary w-100 py-2 rounded-pill fw-bold"
+                                data-bs-dismiss="modal">Continue Shopping</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
