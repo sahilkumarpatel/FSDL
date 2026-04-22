@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Stellar Journeys</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spaceship">🛸</div>
+        <h2>Opening Comm Channel...</h2>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">STELLAR<span>JOURNEYS</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="page-container">
+        <h1 class="section-title">Communicate</h1>
+        
+        <div class="glass-form-container">
+            <form id="contact-form" class="glass-form">
+                <div class="form-group">
+                    <label for="c-name">Name</label>
+                    <input type="text" id="c-name" class="glass-input" required placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="c-email">Sub-ether Email</label>
+                    <input type="email" id="c-email" class="glass-input" required placeholder="your.email@galaxy.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="c-message">Transmission message</label>
+                    <textarea id="c-message" class="glass-input" rows="4" required placeholder="What do you seek?"></textarea>
+                </div>
+                
+                <button type="submit" class="neon-button" style="width: 100%; margin-top: 10px;">Transmit</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

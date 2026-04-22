@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages | Stellar Journeys</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spaceship">🚀</div>
+        <h2>Calculating Orbital Vectors...</h2>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="logo">STELLAR<span>JOURNEYS</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html" class="active">Packages</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main class="page-container">
+        <h1 class="section-title">Orbiting Packages</h1>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">Select an orbiting package to view details.</p>
+        
+        <div class="orbit-container">
+            <div class="central-star"></div>
+            
+            <div class="orbit-path one">
+                <div class="orbit-item" style="top: 0; left: 50%;">Inner Rim Express<br><span>$15,000</span></div>
+                <div class="orbit-item" style="top: 100%; left: 50%;">Lunar Weekend<br><span>$8,000</span></div>
+            </div>
+            
+            <div class="orbit-path two">
+                <div class="orbit-item" style="top: 50%; left: 0;">Jovian Explorer<br><span>$45,000</span></div>
+                <div class="orbit-item" style="top: 50%; left: 100%;">Saturn Rings<br><span>$60,000</span></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
