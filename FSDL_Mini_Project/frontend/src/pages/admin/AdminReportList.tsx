@@ -99,6 +99,7 @@ const AdminReportList = () => {
             initialSearchTerm={searchTerm} 
             initialStatusFilter={statusFilter}
             initialSortOrder={sortOrder}
+            hideFilters={true}
           />
         </CardContent>
       </Card>

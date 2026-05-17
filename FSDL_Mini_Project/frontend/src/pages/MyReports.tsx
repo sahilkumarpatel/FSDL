@@ -62,6 +62,7 @@ const MyReports = () => {
         initialSearchTerm={searchTerm}
         initialStatusFilter={statusFilter}
         initialSortOrder={sortOrder}
+        hideFilters={true}
       />
     </div>
   );

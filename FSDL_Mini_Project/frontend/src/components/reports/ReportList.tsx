@@ -12,13 +12,15 @@ interface ReportListProps {
   initialSearchTerm?: string;
   initialStatusFilter?: string;
   initialSortOrder?: string;
+  hideFilters?: boolean;
 }
 
 const ReportList: React.FC<ReportListProps> = ({ 
   isAdminView = false, 
   initialSearchTerm = '',
   initialStatusFilter = 'all',
-  initialSortOrder = 'newest'
+  initialSortOrder = 'newest',
+  hideFilters = false
 }) => {
   const { currentUser } = useAuth();
   const [reports, setReports] = useState<ReportType[]>([]);
@@ -119,8 +121,8 @@ const ReportList: React.FC<ReportListProps> = ({
     );
   }
 
-  // Skip the filter UI if the parent component provides filters
-  const shouldShowFilters = !initialSearchTerm && initialStatusFilter === 'all' && initialSortOrder === 'newest';
+  // Skip the filter UI if the parent component provides filters or explicitly hides them
+  const shouldShowFilters = !hideFilters && !initialSearchTerm && initialStatusFilter === 'all' && initialSortOrder === 'newest';
 
   return (
     <div className="pb-8">
